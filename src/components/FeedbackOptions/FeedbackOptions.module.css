@@ -1,0 +1,15 @@
+.btnFeedback {
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8%;
+  height: 25px;
+}
+
+.btnFeedback:hover {
+  background-color: #2196f3;
+}
+
+.btnFeedback::first-letter {
+  text-transform: uppercase;
+}
