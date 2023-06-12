@@ -3,12 +3,19 @@ import Section from './Section';
 import Statistics from './Statistics';
 import Notification from './Notification';
 import FeedbackOptions from './FeedbackOptions';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
+  };
+
+  static propTypes = {
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
   };
 
   onLeaveFeedback = option => {
